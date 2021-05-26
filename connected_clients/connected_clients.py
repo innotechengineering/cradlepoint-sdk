@@ -1,7 +1,7 @@
 from time import sleep
 from csclient import EventingCSClient
 
-SCAN_INTERVAL = 10
+SCAN_INTERVAL = 300
 
 cp = EventingCSClient('connected_clients')
 cp.log("Scanning for connected clients every {}s".format(SCAN_INTERVAL))
